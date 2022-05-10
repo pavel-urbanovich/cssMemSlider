@@ -16,16 +16,90 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    align-items: center;
     height: 100%;
     font-size: 20px;
     color: #545454;
     font-family: 'Arial';
     font-weight: 400;
     line-height: 24px;
+    background: #d6cece;
 }
 
 h1,
 h2,
 h3 {
     margin: 0px;
+}
+
+.container {
+    max-width: 80rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.header {
+    height: 10%;
+}
+
+.main {
+    height: 80%;
+}
+
+.footer {
+    height: 10%;
+}
+
+.header-name {
+    padding: 2rem;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.slide-1 {
+    background-image: url(assets/start.jpg);
+}
+
+.slide-2 {
+    background-image: url(assets/panic.jpg);
+}
+
+.slide-3 {
+    background-image: url(assets/computer.jpg);
+}
+
+.slide-4 {
+    background-image: url(assets/scelet.jpg);
+}
+
+.slide-5 {
+    background-image: url(assets/finish.jpg);
+}
+
+.slider-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #ddd;
+	width: inherit;
+	box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+.slides {
+    width: 36rem;
+    height: 26rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slider-container {
+    overflow-x: hidden;
+    width: 500px;
+}
+
+.slider {
+    display: inline-flex;
 }
