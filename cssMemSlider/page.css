@@ -24,6 +24,7 @@ body {
     font-weight: 400;
     line-height: 24px;
     background: #d6cece;
+    font-family: 'Oswald', sans-serif;
 }
 
 h1,
@@ -61,26 +62,6 @@ h3 {
     gap: 1rem;
 }
 
-.slide-1 {
-    background-image: url(assets/start.jpg);
-}
-
-.slide-2 {
-    background-image: url(assets/panic.jpg);
-}
-
-.slide-3 {
-    background-image: url(assets/computer.jpg);
-}
-
-.slide-4 {
-    background-image: url(assets/scelet.jpg);
-}
-
-.slide-5 {
-    background-image: url(assets/finish.jpg);
-}
-
 .slider-wrapper {
     display: flex;
     flex-direction: column-reverse;
@@ -88,7 +69,17 @@ h3 {
 	width: inherit;
 	box-shadow: 0 0 20px rgba(0, 0, 0, .5);
 }
-.slides {
+
+.slider {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 2vh 0;
+    border-radius: 3vh;
+    display: flex;
+    flex-direction: column;
+}
+/* .slides {
     width: 36rem;
     height: 26rem;
     background-repeat: no-repeat;
@@ -102,4 +93,4 @@ h3 {
 
 .slider {
     display: inline-flex;
-}
+} */
