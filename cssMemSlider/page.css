@@ -13,11 +13,11 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     height: 100%;
-    font-size: 1,25rem;
+    font-size: 1.25rem;
     color: #545454;
     font-family: 'Arial';
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5rem;
     background: #d6cece;
     font-family: 'Oswald', sans-serif;
     height: 100%;
@@ -61,7 +61,7 @@ h3 {
     display: flex;
     width: 90%;
     background-color: rgb(245, 241, 241);
-	box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	box-shadow: 0 0 1rem rgba(0, 0, 0, .8);
     margin: 0 auto;
     justify-content: center;
     align-items: center;
@@ -119,25 +119,37 @@ input[name='point'] {
 }
 
 .controls-point:hover .text {
-    background: gray;
-    transform: scale(1.2);
-    border: 3px solid white;
+    background: rgb(196, 192, 192);
+    border: 0.15rem solid;
+    transition: all 0.8s ease;
 }
 
 .controls-point:active {
-    background: rgb(221, 218, 218);
+    background: rgb(185, 182, 182);
     border-radius: 50%;
-    transition: 0.5s;
+    transition: 0.8s;
+}
+
+.text-2:target  {
+    background: red;
 }
 
 .text {
     display: block;
     width: 1rem;
     height: 1rem;
-    border-radius: 50%;
+    border-radius: 20%;
     box-sizing: border-box;
-    border: 1px solid rosybrown;
+    border: 0.1rem solid rgb(73, 63, 63);
     transition: all .4s ease;
+}
+
+#slide1:checked ~ .nav .controls .controls-point .text-1,
+#slide2:checked ~ .nav .controls .controls-point .text-2,
+#slide3:checked ~ .nav .controls .controls-point .text-3,
+#slide4:checked ~ .nav .controls .controls-point .text-4,
+#slide5:checked ~ .nav .controls .controls-point .text-5 {
+    background: rgb(58, 57, 57);
 }
 
 #slide1:checked ~ .slides-content .active {
@@ -192,8 +204,7 @@ input[name='point'] {
     display: flex;
     align-items: center;
     font-size: 1.4rem;
-    letter-spacing: 0.8px;
-    transition: all .6s ease;
+    transition: all .8s ease;
 }
 
 .footer-wrapper {
@@ -207,7 +218,7 @@ input[name='point'] {
 
 .footer-info {
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 a {
