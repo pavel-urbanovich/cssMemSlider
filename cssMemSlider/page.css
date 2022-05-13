@@ -242,9 +242,6 @@ a:hover {
         width: 100%;
         padding: 0;
     }
-    .info {
-        justify-content: center;
-    }
 }
 
 @media (max-width: 350px) {
